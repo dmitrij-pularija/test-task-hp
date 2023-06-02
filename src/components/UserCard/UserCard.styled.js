@@ -85,13 +85,15 @@ export const Button = styled.button`
   color: #373737;
   text-transform: uppercase;
   text-align: center;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
   &:focus,
   &:hover {
-    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
   }
 `;
+
 export const Line = styled.div`
   position: relative;
   width: 100%;
