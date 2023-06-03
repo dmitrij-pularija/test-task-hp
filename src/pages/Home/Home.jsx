@@ -1,7 +1,12 @@
+import picture from "../../components/assets/img/backgraund.png";
+import { Wrapper, Image, Header } from "./Home.styled";
 const HomePage = () => {
-    return (
-        <h1>Home page</h1>
-        );
-    };
-    
-    export default HomePage;
+  return (
+    <Wrapper>
+      <Image src={picture} alt="Tweets" />
+      <Header>Welcome to the tweets app!</Header>
+    </Wrapper>
+  );
+};
+
+export default HomePage;

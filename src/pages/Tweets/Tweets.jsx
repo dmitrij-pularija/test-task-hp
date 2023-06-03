@@ -1,6 +1,8 @@
+import UserCard from "../../components/UserCard/UserCard";
+
 const TweetsPage = () => {
     return (
-        <h1>Tweets page</h1>
+        <UserCard />
         );
     };
     
