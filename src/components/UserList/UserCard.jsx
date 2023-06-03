@@ -9,12 +9,14 @@ import {
   Line,
   Circle,
   Avatar,
-} from "./UserCard.styled";
+} from "./UserList.styled";
 import user from "../assets/img/hansel.png";
 import { ReactComponent as Logo } from "../assets/img/logo.svg";
 import { ReactComponent as Picture } from "../assets/img/backgraund.svg";
 
-const UserCard = () => {
+const UserCard = ({ tweets, followers, avatar }) => {
+  const formatValue = value => value.toLocaleString('En');
+
   return (
     <Card>
       <ContentBox>
@@ -24,8 +26,8 @@ const UserCard = () => {
         <Picture />
         <ActiveBox>
           <TextBox>
-            <Text>777 tweets</Text>
-            <Text>100,500 Followers</Text>
+            <Text>{formatValue(tweets)} tweets</Text>
+            <Text>{formatValue(followers)} Followers</Text>
           </TextBox>
           <Button type="submit">Follow</Button>
         </ActiveBox>
@@ -33,7 +35,7 @@ const UserCard = () => {
 
       <Line />
       <Circle>
-        <Avatar src={user} />
+        <Avatar src={avatar ? avatar : user} />
       </Circle>
     </Card>
   );

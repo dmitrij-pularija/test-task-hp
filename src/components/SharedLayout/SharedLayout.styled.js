@@ -1,6 +1,16 @@
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+export const HeaderWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #837AD4;
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+`;
+
 export const Logo = styled(Link)`
   width: 100%;
   display: flex;
@@ -14,10 +24,6 @@ export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #837AD4;
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
-  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
 `;
 
 export const Nav = styled.nav`
@@ -46,9 +52,9 @@ export const NavItem = styled(NavLink)`
   }
 `;
 
-export const OutletBox = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
-  height: calc(100% - 62px);
+  height: calc(100% - 71px);
   display: flex;
   flex-direction: column;
   justify-content: center;

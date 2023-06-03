@@ -1,8 +1,31 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
-position: relative;
-  width: 380px;
+export const Gallery = styled.ul`
+  width: 100%;
+  margin: 0 auto;
+  padding: 48px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto-fit;
+  gap: 48px;
+  justify-content: space-between;
+
+  @media screen and (min-width: 410px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media screen and (min-width: 838px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1251px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
+
+export const Card = styled.li`
+  position: relative;
+  width: calc(100% - 30px);
   height: 460px;
   display: flex;
   align-items: center;
@@ -16,6 +39,10 @@ position: relative;
     #4b2a99 78.99%
   );
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+
+  @media screen and (min-width: 410px) {
+    width: 380px;
+  }
 `;
 export const ContentBox = styled.div`
   position: absolute;
@@ -43,7 +70,7 @@ export const ActiveBox = styled.div`
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  gap:26px;
+  gap: 26px;
 `;
 export const TextBox = styled.div`
   width: 100%;
@@ -52,13 +79,13 @@ export const TextBox = styled.div`
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
   // line-height: 1.2;
-  color: #EBD8FF;
+  color: #ebd8ff;
   text-transform: uppercase;
-  gap:16px;
+  gap: 16px;
 `;
 export const Text = styled.span`
   width: 100%;
@@ -76,9 +103,9 @@ export const Button = styled.button`
   padding: 14px 28px;
   cursor: pointer;
   border-radius: 10px;
-  background: #EBD8FF;
+  background: #ebd8ff;
   border-style: none;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 18px;
   // line-height: 1.22;

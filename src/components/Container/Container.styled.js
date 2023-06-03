@@ -1,8 +1,19 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  min-height: 100vh;
-  width: 100%;
-  padding: 0 15px;
-  background: #766A92;
+width: 100%;
+margin: 0 auto;
+
+@media screen and (min-width: 410px) {
+  max-width: 380px;
+}
+
+@media screen and (min-width: 838px) {
+  max-width: 808px;
+
+}
+
+@media screen and (min-width: 1251px) {
+  max-width: 1251px;
+} 
 `;
