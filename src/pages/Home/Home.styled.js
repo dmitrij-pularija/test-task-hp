@@ -21,6 +21,7 @@ export const Header = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+text-align: center;
 font-family: 'Montserrat';
 font-weight: 600;
 font-size: 36px;
