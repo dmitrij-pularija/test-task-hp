@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const Text = styled.div`
   width: 100%;
-  height: 70vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;

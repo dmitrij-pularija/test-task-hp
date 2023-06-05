@@ -43,8 +43,8 @@ const TweetsPage = () => {
 
   return (
     <Wrapper>
-      {loading && <Loader />}
       <TollsPanel filter={filter} filterChange={handleFilterChange} />
+      {loading && <Loader />}
       {users.length ? (
         <>
           <UserList users={users} handleClick={handleSetFollowing} />
