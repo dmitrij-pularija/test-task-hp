@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0;
   background: #837ad4;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
 `;
@@ -49,14 +49,4 @@ export const NavItem = styled(NavLink)`
     color: rgba(92, 211, 168, 1);
     border-bottom: 3px solid rgba(92, 211, 168, 1);
   }
-`;
-
-export const Wrapper = styled.div`
-  width: 100%;
-  height: calc(100% - 71px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 `;

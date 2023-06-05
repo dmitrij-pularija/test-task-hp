@@ -6,6 +6,7 @@ import {
   ActiveBox,
   TextBox,
   Text,
+  Wrapper,
   Line,
   Circle,
   Avatar,
@@ -45,11 +46,12 @@ const UserCard = ({
           </Button>
         </ActiveBox>
       </ContentBox>
-
+      <Wrapper>
       <Line />
       <Circle>
         <Avatar src={avatar ? avatar : user} />
       </Circle>
+      </Wrapper>
     </Card>
   );
 };

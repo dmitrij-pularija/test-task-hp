@@ -2,30 +2,24 @@ import styled from "styled-components";
 
 export const Gallery = styled.ul`
   width: 100%;
-  margin: 0 auto;
   padding: 48px 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: auto-fit;
   gap: 48px;
-  justify-content: space-between;
-
-  @media screen and (min-width: 410px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  justify-content: center;
 
   @media screen and (min-width: 838px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: 1251px) {
+  @media screen and (min-width: 1266px) {
     grid-template-columns: repeat(3, 1fr);
   }
 `;
 
 export const Card = styled.li`
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
   height: 460px;
   display: flex;
   align-items: center;
@@ -93,8 +87,18 @@ export const Text = styled.span`
   background: transparent;
 `;
 
+export const Wrapper = styled.div`
+  position: absolute;
+  bottom: 202px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Line = styled.div`
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 8px;
   background: #ebd8ff;
