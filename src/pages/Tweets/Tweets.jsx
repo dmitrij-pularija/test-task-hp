@@ -26,7 +26,7 @@ const TweetsPage = () => {
     });
   const handleFilterChange = (value) =>
     setState((prevState) => {
-      return { ...prevState, filter: value, page: 1, pages: 1 };
+      return { ...prevState, filter: value, users: [], page: 1, pages: 1 };
     });
   const handleSetFollowing = ({ id, followers, isFollowing }) =>
     update({ id, followers, isFollowing, filter, setState });
@@ -40,7 +40,7 @@ const TweetsPage = () => {
   useEffect(() => {
     error && Report.failure('Error:', `${error}`, 'OK');
   }, [error]);
-
+console.log(users);
   return (
     <Wrapper>
     {loading && <Loader />}

@@ -15,7 +15,7 @@ export const getAll = async ({ page, perpage, filter, setState }) => {
     setState((prevState) => {
       return {
         ...prevState,
-        users: data,
+        users: [...prevState.users, ...data],
         pages: Math.ceil(response.data.length / perpage),
       };
     });
