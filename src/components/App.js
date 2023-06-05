@@ -9,7 +9,7 @@ const TweetsPage = lazy(() => import("../pages/Tweets/Tweets"));
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/goit-test-task">
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
