@@ -51,6 +51,9 @@ There should be a back button on the tweets page, which leads to the main page.
 ## **Tasks with an asterisk***
 
 Add filtering. It should be a Dropdown with 3 options (design at your discretion): show all, follow, followings
+
 show all - show all tweets.
+
 follow - show tweets with follow status.
+
 followings - show tweets with following status
