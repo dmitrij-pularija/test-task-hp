@@ -1,11 +1,11 @@
-import { PuffLoader } from 'react-spinners';
+import { PuffLoader } from "react-spinners";
 
 const Loader = () => {
   return (
     <PuffLoader
-      color={'#36d7b7'}
+      color={"#36d7b7"}
       loading={true}
-      cssOverride={{ display: 'block', margin: '31% auto' }}
+      cssOverride={{ display: "block", margin: "31% auto" }}
       size={60}
       aria-label="Loading Spinner"
       data-testid="loader"

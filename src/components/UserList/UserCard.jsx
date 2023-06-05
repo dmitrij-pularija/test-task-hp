@@ -14,8 +14,15 @@ import user from "../assets/img/hansel.png";
 import { ReactComponent as Logo } from "../assets/img/logo.svg";
 import { ReactComponent as Picture } from "../assets/img/backgraund.svg";
 
-const UserCard = ({ id, tweets, followers, avatar, isFollowing, handleClick }) => {
-  const formatValue = value => value.toLocaleString('En');
+const UserCard = ({
+  id,
+  tweets,
+  followers,
+  avatar,
+  isFollowing,
+  handleClick,
+}) => {
+  const formatValue = (value) => value.toLocaleString("En");
 
   return (
     <Card>
@@ -29,7 +36,12 @@ const UserCard = ({ id, tweets, followers, avatar, isFollowing, handleClick }) =
             <Text>{formatValue(tweets)} tweets</Text>
             <Text>{formatValue(followers)} Followers</Text>
           </TextBox>
-          <Button color={isFollowing ? "#5CD3A8" : "#ebd8ff" } handleClick={() => handleClick({ id, followers, isFollowing })}>{isFollowing ? "Following" : "Follow"}</Button>
+          <Button
+            color={isFollowing ? "#5CD3A8" : "#ebd8ff"}
+            handleClick={() => handleClick({ id, followers, isFollowing })}
+          >
+            {isFollowing ? "Following" : "Follow"}
+          </Button>
         </ActiveBox>
       </ContentBox>
 

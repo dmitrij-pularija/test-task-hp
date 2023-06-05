@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   height: 80vh;
@@ -18,12 +18,12 @@ export const Image = styled.img`
 `;
 
 export const Header = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-font-family: 'Montserrat';
-font-weight: 600;
-font-size: 36px;
-color: #EBD8FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+  color: #ebd8ff;
 `;

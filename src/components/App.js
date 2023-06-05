@@ -1,5 +1,3 @@
-// import UserCard from "./UserCard/UserCard";
-// import "./App.css";
 import { lazy } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import SharedLayout from "./SharedLayout/SharedLayout";

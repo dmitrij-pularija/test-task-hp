@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Report } from 'notiflix/build/notiflix-report-aio';
+import { Report } from "notiflix/build/notiflix-report-aio";
 import UserList from "../../components/UserList/UserList";
 import { getAll, update } from "../../api/operations";
 import Loader from "../../components/Loader";
@@ -36,26 +36,28 @@ const TweetsPage = () => {
   useEffect(() => {
     getAll({ page, perpage, filter, setState });
   }, [page, perpage, filter]);
-  
+
   useEffect(() => {
-    error && Report.failure('Error:', `${error}`, 'OK');
+    error && Report.failure("Error:", `${error}`, "OK");
   }, [error]);
-console.log(users);
+
   return (
     <Wrapper>
-    {loading && <Loader />}
-    <TollsPanel filter={filter} filterChange={handleFilterChange} />
+      {loading && <Loader />}
+      <TollsPanel filter={filter} filterChange={handleFilterChange} />
       {users.length ? (
         <>
           <UserList users={users} handleClick={handleSetFollowing} />
           {page !== pages && (
-              <Button color={"#ebd8ff"} handleClick={handleLoadMore}>
-                Load More
-              </Button>
+            <Button color={"#ebd8ff"} handleClick={handleLoadMore}>
+              Load More
+            </Button>
           )}
         </>
-    ) : (    
-      <Text>{loading? "Loading, please wait...." : "No search results"}</Text>  
+      ) : (
+        <Text>
+          {loading ? "Loading, please wait...." : "No search results"}
+        </Text>
       )}
     </Wrapper>
   );

@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  // padding-top: 48px;
 `;
 
 export const Back = styled(Link)`
@@ -24,17 +23,11 @@ export const Back = styled(Link)`
 `;
 
 export const Filter = styled.div`
-position: relative;
-display: inline-block;
+  position: relative;
+  display: inline-block;
 `;
 
-// export const DropdownContainer = styled.div`
-//   position: relative;
-//   display: inline-block;
-// `;
-
 export const FilterToggle = styled.button`
-  // background: inherit;
   width: 48px;
   height: 48px;
   display: flex;
@@ -58,17 +51,13 @@ export const FilterMenu = styled.div`
   position: absolute;
   top: 100%;
   right: 0;
-  // bottom: 2px;
   z-index: 1000;
   min-width: 160px;
   padding: 8px 0;
   margin-top: 1px;
   background-color: #ebd8ff;
-  // background-clip: padding-box;
-  // border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
-
 `;
 
 export const FilterItem = styled.button`
@@ -78,7 +67,6 @@ export const FilterItem = styled.button`
   justify-content: flex-start;
   gap: 10px;
   padding: 8px 16px;
-  // clear: both;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
@@ -88,10 +76,9 @@ export const FilterItem = styled.button`
   border: none;
   cursor: pointer;
 
-
   &:hover,
   &:focus {
     color: #ebd8ff;
-    background-color: #837AD4;
+    background-color: #837ad4;
   }
 `;

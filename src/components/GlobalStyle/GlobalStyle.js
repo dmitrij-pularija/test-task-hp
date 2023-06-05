@@ -1,26 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-// @font-face {
-//     font-family: 'Montserrat';
-//     font-weight: 400;
-//     src: local('Montserrat-Regular'), 
-//     url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
-//   }
-
-// @font-face {
-//     font-family: 'Montserrat';
-//     font-weight: 500;
-//     src: local('Montserrat-Medium'), 
-//     url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
-//   }
-
-//   @font-face {
-//     font-family: 'Montserrat';
-//     font-weight: 600;
-//     src: local('Montserrat-SemiBold'), 
-//     url('../assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
-//   }
 
 body {
     margin: 0;
@@ -61,10 +41,6 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-  }
-  
-  .no-scroll {
-    overflow: hidden;
   }
 `;
 

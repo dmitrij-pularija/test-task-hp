@@ -81,7 +81,6 @@ export const TextBox = styled.div`
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
-  // line-height: 1.2;
   color: #ebd8ff;
   text-transform: uppercase;
   gap: 16px;
@@ -93,32 +92,6 @@ export const Text = styled.span`
   justify-content: center;
   background: transparent;
 `;
-
-// export const Button = styled.button`
-//   width: 196px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 14px 28px;
-//   cursor: pointer;
-//   border-radius: 10px;
-//   background: #ebd8ff;
-//   border-style: none;
-//   font-family: "Montserrat";
-//   font-weight: 600;
-//   font-size: 18px;
-//   // line-height: 1.22;
-//   color: #373737;
-//   text-transform: uppercase;
-//   text-align: center;
-//   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-//   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-//   &:focus,
-//   &:hover {
-//     transform: scale(1.03);
-//   }
-// `;
 
 export const Line = styled.div`
   position: relative;

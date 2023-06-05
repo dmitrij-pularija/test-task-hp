@@ -1,5 +1,5 @@
-import { Link, NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import { Link, NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   width: 100%;
@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #837AD4;
+  background: #837ad4;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
 `;
 
@@ -40,7 +40,6 @@ export const NavItem = styled(NavLink)`
   font-weight: 700;
   font-size: 24px;
   color: rgba(235, 216, 255, 1);
-//   border-bottom: 3px solid rgba(235, 216, 255, 1);
 
   &:hover,
   &:focus {
