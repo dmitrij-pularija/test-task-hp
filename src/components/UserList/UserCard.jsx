@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import {
   Card,
   ContentBox,
+  Picture,
   LogoBox,
   ActiveBox,
   TextBox,
@@ -14,7 +15,6 @@ import {
 import Button from "../Button/Button";
 import user from "../assets/img/hansel.png";
 import { ReactComponent as Logo } from "../assets/img/logo.svg";
-import { ReactComponent as Picture } from "../assets/img/backgraund.svg";
 
 const UserCard = ({
   id,
@@ -47,10 +47,10 @@ const UserCard = ({
         </ActiveBox>
       </ContentBox>
       <Wrapper>
-      <Line />
-      <Circle>
-        <Avatar src={avatar ? avatar : user} />
-      </Circle>
+        <Line />
+        <Circle>
+          <Avatar src={avatar ? avatar : user} />
+        </Circle>
       </Wrapper>
     </Card>
   );

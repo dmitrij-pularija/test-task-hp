@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import backgraund from "../assets/img/backgraund.png";
 
 export const Gallery = styled.ul`
   width: 100%;
@@ -48,6 +49,15 @@ export const ContentBox = styled.div`
   padding: 28px 36px 36px 36px;
   background: transparent;
 `;
+export const Picture = styled.div`
+  width: 100%;
+  height: 168px;
+  display: block;
+  background-image: url(${backgraund});
+  background-size: 100%, 100%, cover;
+  background-repeat: no-repeat;
+`;
+
 export const LogoBox = styled.div`
   position: absolute;
   left: 20px;
