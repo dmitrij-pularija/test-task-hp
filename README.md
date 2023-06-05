@@ -1,8 +1,10 @@
-#                                                                     Test task
-### **Goal:** Create tweet cards and add interactivity at the click of a button.
+<h1 align="center">Test task</h1>
+
+**Goal:** Create tweet cards and add interactivity at the click of a button.
+
 
 ![The general appearance of the card in two states - Follow and Following](https://github.com/dmitrij-pularija/goit-test-task/blob/main/assets/maket.png)
-The general appearance of the card in two states - Follow and Following.
+<h5 align="center">The general appearance of the card in two states - Follow and Following.</h5>
 
 Performance criteria
 * The layout is fixed in rh, semantic and valid.
