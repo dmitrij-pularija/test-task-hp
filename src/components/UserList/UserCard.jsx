@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import {
   Card,
   ContentBox,
@@ -51,6 +52,15 @@ const UserCard = ({
       </Circle>
     </Card>
   );
+};
+
+UserCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  tweets: PropTypes.number.isRequired,
+  followers: PropTypes.number.isRequired,
+  avatar: PropTypes.string.isRequired,
+  isFollowing: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default UserCard;

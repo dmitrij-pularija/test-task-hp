@@ -5,8 +5,8 @@ const Loader = () => {
     <PuffLoader
       color={"#36d7b7"}
       loading={true}
-      cssOverride={{ display: "block", margin: "31% auto" }}
-      size={60}
+      cssOverride={{ display: "block", height: '80vh', margin: '0 auto' }}
+      size={80}
       aria-label="Loading Spinner"
       data-testid="loader"
     />

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { ReactComponent as IconBack } from "../assets/img/back.svg";
 import { ReactComponent as IconFilter } from "../assets/img/filter.svg";
@@ -56,6 +57,11 @@ const TollsPanel = ({ filter, filterChange }) => {
       </Filter>
     </Wrapper>
   );
+};
+
+TollsPanel.propTypes = {
+  filter: PropTypes.string.isRequired,
+  filterChange: PropTypes.func.isRequired,
 };
 
 export default TollsPanel;
