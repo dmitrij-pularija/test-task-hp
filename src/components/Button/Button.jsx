@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import { nanoid } from 'nanoid';
 import { Btn } from "./Button.styled";
 
 const Button = ({ children, color, handleClick }) => {
   return (
-    <Btn type="button" color={color} onClick={() => handleClick()}>
+    <Btn key={nanoid()} type="button" color={color} onClick={() => handleClick()}>
       {children}
     </Btn>
   );
