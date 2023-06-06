@@ -53,7 +53,7 @@ export const FilterMenu = styled.div`
   right: 0;
   z-index: 1000;
   min-width: 160px;
-  max-height: ${(props) => (props.isOpen ? "160px" : "0")};
+  max-height: ${(props) => (props.isOpen ? "170px" : "0")};
   overflow: hidden;
   margin-top: 1px;
   background-color: #ebd8ff;
