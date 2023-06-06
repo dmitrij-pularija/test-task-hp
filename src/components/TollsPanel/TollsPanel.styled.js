@@ -53,11 +53,13 @@ export const FilterMenu = styled.div`
   right: 0;
   z-index: 1000;
   min-width: 160px;
-  padding: 8px 0;
+  max-height: ${(props) => (props.isOpen ? "160px" : "0")};
+  overflow: hidden;
   margin-top: 1px;
   background-color: #ebd8ff;
   border-radius: 20px;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  transition: max-height cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 `;
 
 export const FilterItem = styled.button`

@@ -37,23 +37,21 @@ const TollsPanel = ({ filter, filterChange }) => {
         <FilterToggle onClick={() => handleToggleClick()}>
           <IconFilter stroke="#5736a3" />
         </FilterToggle>
-        {isOpen && (
-          <FilterMenu>
-            {options.map((option, index) => (
-              <FilterItem
-                key={index}
-                onClick={() => handleOptionChange(option.value)}
-              >
-                {filter === option.value ? (
-                  <IconChecked fill="#4CA361" width={"20px"} />
-                ) : (
-                  <IconUnchecked fill="#5736a3" width={"20px"} />
-                )}
-                {option.label}
-              </FilterItem>
-            ))}
-          </FilterMenu>
-        )}
+        <FilterMenu isOpen={isOpen}>
+          {options.map((option, index) => (
+            <FilterItem
+              key={index}
+              onClick={() => handleOptionChange(option.value)}
+            >
+              {filter === option.value ? (
+                <IconChecked fill="#4CA361" width={"20px"} />
+              ) : (
+                <IconUnchecked fill="#5736a3" width={"20px"} />
+              )}
+              {option.label}
+            </FilterItem>
+          ))}
+        </FilterMenu>
       </Filter>
     </Wrapper>
   );
