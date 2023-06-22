@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import { Wrapper } from "./Container.styled";
+import css from "./Container.module.css";
 
 const Container = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+  return <section className={css.wrapper}>{children}</section>;
 };
 
 Container.propTypes = {

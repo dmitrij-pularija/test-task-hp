@@ -1,0 +1,30 @@
+.toggle {
+  display: flex;
+  flex-direction: row;
+}
+
+.toggle__button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: inherit;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #859ba6;
+}
+
+input[type="radio"] {
+  display: none;
+}
+  
+input[type="radio"]:checked + .toggle__button {
+    background-color: #859ba6;
+    color: #ffffff;
+  }
+  
+  
+  
+  
