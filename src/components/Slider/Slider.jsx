@@ -21,7 +21,7 @@ const Slider = () => {
         src={backgraund}
         alt="Відцентровий витяжний вентилятор"
         width={560}
-        height={385}
+        height={377}
       />
       <div className={css.slide__info}>
         <div className={css.slide__info__text}>
