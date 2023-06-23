@@ -12,7 +12,7 @@ const Slider = () => {
           Meltem – це гарантовано якісне вентиляційне обладнання від німецького
           заводу.
         </div>
-        <Button width={"140px"} color={"#859BA6"}>
+        <Button width={"140px"} color={"#859BA6"} handleClick={() => {}}>
           Продукція
         </Button>
       </div>
@@ -28,7 +28,7 @@ const Slider = () => {
           Відцентровий витяжний вентилятор
         </div>
         <div className={css.slide__title}>Meltem V-II 30-N</div>
-        <Button width={"140px"} color={"#FFFFFF"}>
+        <Button width={"140px"} color={"#FFFFFF"} handleClick={() => {}}>
           Детальніше
         </Button>
       </div>

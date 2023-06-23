@@ -1,0 +1,27 @@
+.wrapper {
+  max-width: 480px;
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 22px 30px;
+}
+
+.text {
+  max-width: 280px;
+  display: block;
+  color: #333333;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 1.3;
+}
+
+.link {
+  color: #859ba6;
+  font-size: 16px;
+}
