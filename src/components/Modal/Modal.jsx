@@ -6,7 +6,7 @@ const Modal = ({ children, closeModal }) => {
 
 
   return (
-    <div className={css.overlay} onClick={() => closeModal()}>
+    <div className={css.overlay}>
       <div className={css.wrapper}>
         {children}
         <button className={css.close} onClick={() => closeModal()} title="Сlick to close">
