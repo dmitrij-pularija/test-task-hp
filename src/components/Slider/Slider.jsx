@@ -32,6 +32,9 @@ const Slider = () => {
           Детальніше
         </Button>
       </div>
+      <div className={css.progressbar__container}>
+        <div className={css.progressbar}></div>
+      </div> 
     </div>
   );
 };

@@ -11,7 +11,7 @@ const SelectLanguage = () => {
 
   return (
     <div className={css.toggle}>
-      <label className={css.toggle__button}>
+      <label className={`${css.toggle__button} ${selectedLanguage === "ua" && css.checked}`}>
         <input
           type="radio"
           value="ua"
@@ -20,7 +20,7 @@ const SelectLanguage = () => {
         />
         UA
       </label>
-      <label className={css.toggle__button}>
+      <label className={`${css.toggle__button} ${selectedLanguage === "ru" && css.checked}`}>
         <input
           type="radio"
           value="ru"

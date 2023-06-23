@@ -19,11 +19,17 @@
 input[type="radio"] {
   display: none;
 }
+.checked {
+  background-color: #859ba6;
+  color: #ffffff;
+}
+
   
-input[type="radio"]:checked + .toggle__button {
+/* .toggle__button > input:checked {
     background-color: #859ba6;
     color: #ffffff;
   }
+   */
   
   
   
