@@ -4,6 +4,8 @@ import Slider from "../../components/Slider/Slider";
 import Header from "../../components/Header/Header";
 import Message from "../../components/Message/Message";
 import Modal from "../../components/Modal/Modal";
+import Forma from "../../components/Forma/Forma";
+
 import css from "./Home.module.css";
 
 
@@ -28,7 +30,7 @@ const Home = () => {
           {isShowMessage && <Message onClick={handleSetCookies}/>}
         </Container>
       </main>
-      {isShowModal && <Modal closeModal={handleSetShowModal}>Test</Modal>}
+      {isShowModal && <Modal closeModal={handleSetShowModal}><Forma /></Modal>}
     </>
   );
 };
