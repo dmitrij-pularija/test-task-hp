@@ -3,7 +3,7 @@ import SelectLanguage from "../SelectLanguage/SelectLanguage";
 import css from "./Header.module.css";
 import { ReactComponent as LogoIcon } from "../assets/img/logo.svg";
 
-const Header = () => {
+const Header = ({ onClick }) => {
   return (
     <div className={css.wrapper}>
       <LogoIcon width={146} height={30} fill={"#859BA6"} />
@@ -20,7 +20,7 @@ const Header = () => {
         <a href="tel:+380800000000" className={css.phone}>
           0 (800) 00-00-00
         </a>
-        <Button width={"140px"} color={"#859BA6"}>
+        <Button width={"140px"} color={"#859BA6"} handleClick={() => onClick()} >
           Зв’язатись
         </Button>
         <SelectLanguage />

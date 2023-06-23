@@ -3,6 +3,7 @@ import Container from "../../components/Container/Container";
 import Slider from "../../components/Slider/Slider";
 import Header from "../../components/Header/Header";
 import Message from "../../components/Message/Message";
+import Modal from "../../components/Modal/Modal";
 import css from "./Home.module.css";
 
 
@@ -10,13 +11,15 @@ import css from "./Home.module.css";
 // import { Wrapper, Image, Header } from "./Home.styled";
 const Home = () => {
   const [isShowMessage, setIsShowMessage] = useState(true);
-  const handleSetCookies = () => setIsShowMessage(false);
+  const [isShowModal, setIsShowModal] = useState(false);
 
+  const handleSetCookies = () => setIsShowMessage(false);
+  const handleSetShowModal = () => setIsShowModal(!isShowModal);
   return (
     <>
       <header className={css.header}>
         <Container>
-          <Header />
+          <Header onClick={handleSetShowModal}/>
         </Container>
       </header>
       <main className={css.main}>
@@ -25,6 +28,7 @@ const Home = () => {
           {isShowMessage && <Message onClick={handleSetCookies}/>}
         </Container>
       </main>
+      {isShowModal && <Modal closeModal={handleSetShowModal}>Test</Modal>}
     </>
   );
 };
