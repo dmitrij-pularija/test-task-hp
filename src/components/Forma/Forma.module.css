@@ -61,6 +61,7 @@ width: 100%;
 border-radius: 5px;
 border: 1px solid #333333;
 padding: 11px 20px;
+background-color: #FAFAFA;
 }
 
 .field::placeholder {
@@ -74,8 +75,17 @@ padding: 11px 20px;
 .number { 
   padding-left: 61px; 
   /* background: url(../assets/img/ua.jpg), lightgray 50% / cover no-repeat; */
-  background: url('../assets/img/ua.jpg') no-repeat, #FAFAFA;
+  background: url('../assets/img/ua.jpg') no-repeat;
   background-size: 26px 18px, auto;
   background-position: 20px center, center;
   flex-shrink: 0;  
 }
+.error {
+color: #FF0000;
+border: 1px solid #FF0000;
+background-color: rgba(255, 204, 204, 0.20);
+}
+.field:hover,
+.field:focus {
+  outline: none;
+  }

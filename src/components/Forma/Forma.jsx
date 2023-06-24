@@ -3,13 +3,16 @@ import { Formik, Form, Field } from 'formik';
 import Button from "../Button/Button";
 import css from "./Forma.module.css";
 import { ReactComponent as CheckIcon } from "../assets/img/quality.svg";
-const initialState = {
-  name: '',
-  number: '',
-};
+import { initialState, validation } from "../../services/initial";
 
 const Forma = () => {
   const [step, setStep] = useState(1);
+  // const [state, setState] = useState(initialState);
+
+  // const handlePhone = (value) => {
+  //   const phone = value.replace(/[^0-9+]/g, "");
+  //   setState((prevState) => ({ ...prevState, phoneNumber: phone || "+" }));
+  // };
   const handleSubmit = (event) => {
     setStep(step + 1);
     console.log(event);
@@ -20,29 +23,29 @@ const Forma = () => {
     <div className={css.wrapper_step1}>
       <h1 className={css.header}>Залишайте заявку</h1>
       <p className={css.title}>Ми зв’яжемося з вами найближчим часом.</p>
-      <Formik initialValues={initialState} onSubmit={handleSubmit}>
+      <Formik initialValues={initialState} validationSchema={validation} onSubmit={handleSubmit}>
+      {({ errors, touched }) => (
       <Form autoComplete="off">
       <div className={css.form} > 
       <Field 
-       className={css.field}
+       className={`${css.field} ${errors.name && touched.name ? css.error : ''}`}
      type={"text"}
      name={"name"}
      placeholder={"Ваше ім’я*"}
-     required
      />   
            <Field 
-      className={`${css.field} ${css.number}`}
+      className={`${css.field} ${css.number} ${errors.number && touched.number ? css.error : ''}`}
      type={"tel"}
      name={"number"}
      placeholder={"+380-00-000-00-00*"}
-     required
      />  
-    <Button width={"100%"} color={"#859BA6"} type={"submit"} handleClick={()=> {}}>
+    <Button width={"100%"} color={"#859BA6"} type="submit" handleClick={()=> {}}>
     Відправить
         </Button>
     <div className={css.terms}> Натискаючи кнопку “Надіслати”, ви погоджуєтесь з <a className={css.link} href="#">Правилами обробки персональних даних.</a></div>
     </div>  
-        </Form>    
+        </Form>
+        )}    
       </Formik>  
     </div>
     : 
