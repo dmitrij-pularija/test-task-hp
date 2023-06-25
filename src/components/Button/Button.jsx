@@ -1,20 +1,22 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
+// import classNames from 'classnames';
 import css from "./Button.module.css";
 
 
-const Button = ({ children, color, width, handleClick }) => {
+const Button = ({ children, styles, handleClick }) => {
+  // const buttonClass = classNames(css.button, styles);
   return (
-    <button className={css.button} style={{ background: color, width: width, color: color === "#859BA6" ? "#FFFFFF" : "#859BA6", border: color === "#FFFFFF" ? "2px solid  #859BA6" : "none"}} onClick={() => handleClick()}>
+    <button className={`${css.button} ${styles}`} onClick={() => handleClick()}>
       {children}
     </button>
   );
 };
 
-Button.propTypes = {
-  handleClick: PropTypes.func,
-  children: PropTypes.node.isRequired,
-  color: PropTypes.string,
-  width: PropTypes.string,
-};
+// Button.propTypes = {
+//   handleClick: PropTypes.func,
+//   children: PropTypes.node.isRequired,
+//   color: PropTypes.string,
+//   width: PropTypes.string,
+// };
 
 export default Button;

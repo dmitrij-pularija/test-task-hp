@@ -1,7 +1,20 @@
 .wrapper {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo {
+  display: flex;
+  width: 91px;
+  height: 18px;
+  flex-shrink: 0;
+
+  @media screen and (min-width: 480px) {
+    width: 146px;
+    height: 30px;
+  }
 }
 .nav__list {
   display: flex;
@@ -11,6 +24,7 @@
   gap: 40px;
 }
 .nav__item {
+  display: flex;
   color: #333333;
   font-size: 16px;
 }
@@ -18,13 +32,76 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 15px;
+
+  @media screen and (min-width: 1320px) {
+    gap: 40px;
+  }
 }
 .phone {
+  display: flex;
   color: #333333;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.16px;
   text-decoration: none;
+}
+
+.button__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+
+  @media screen and (min-width: 1320px) {
+    display: none;
+  }
+}
+
+.controll {
+  display: flex;
+
+  @media screen and (max-width: 1320px) {
+    display: none;
+  }
+}
+.burger__menu {
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  z-index: 5;
+}
+
+.burger__menu__list {
+  flex-direction: column;
+  margin: 0 auto;
+}
+.burger__menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+  gap: 40px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #859ba6;
+  border: 2px solid #859ba6;
+
+  @media screen and (min-width: 1320px) {
+    width: 140px;
+    height: 45px;
+    background-color: #859ba6;
+    color: #ffffff;
+    border: none;
+  }
 }

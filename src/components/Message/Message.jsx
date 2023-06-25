@@ -11,7 +11,7 @@ const Message = ({ onClick }) => {
         </a>
         .
       </div>
-      <Button width={"100px"} color={"#FFFFFF"} handleClick={() => onClick()}>
+      <Button styles={css.button} handleClick={() => onClick()}>
         Згоден
       </Button>
     </div>

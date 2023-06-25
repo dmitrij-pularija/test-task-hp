@@ -1,4 +1,3 @@
-// import PropTypes from "prop-types";
 import css from "./Slider.module.css";
 import Button from "../Button/Button";
 import backgraund from "../assets/img/background.png";
@@ -12,7 +11,7 @@ const Slider = () => {
           Meltem – це гарантовано якісне вентиляційне обладнання від німецького
           заводу.
         </div>
-        <Button width={"140px"} color={"#859BA6"} handleClick={() => {}}>
+        <Button styles={css.button__dark} handleClick={() => {}}>
           Продукція
         </Button>
       </div>
@@ -28,19 +27,15 @@ const Slider = () => {
           Відцентровий витяжний вентилятор
         </div>
         <div className={css.slide__title}>Meltem V-II 30-N</div>
-        <Button width={"140px"} color={"#FFFFFF"} handleClick={() => {}}>
+        <Button styles={css.button__white} handleClick={() => {}}>
           Детальніше
         </Button>
       </div>
       <div className={css.progressbar__container}>
         <div className={css.progressbar}></div>
-      </div> 
+      </div>
     </div>
   );
 };
-
-// Container.propTypes = {
-//   children: PropTypes.node.isRequired,
-// };
 
 export default Slider;
