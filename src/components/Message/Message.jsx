@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import css from "./Message.module.css";
 
@@ -16,6 +17,10 @@ const Message = ({ onClick }) => {
       </Button>
     </div>
   );
+};
+
+Message.propTypes = {
+  onClick: PropTypes.func,
 };
 
 export default Message;

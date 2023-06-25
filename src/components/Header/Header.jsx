@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import SelectLanguage from "../SelectLanguage/SelectLanguage";
 import css from "./Header.module.css";
@@ -61,6 +62,10 @@ const Header = ({ onClick }) => {
       </div>
     </>
   );
+};
+
+Header.propTypes = {
+  onClick: PropTypes.func,
 };
 
 export default Header;

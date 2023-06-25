@@ -1,10 +1,7 @@
-// import PropTypes from "prop-types";
-// import classNames from 'classnames';
+import PropTypes from "prop-types";
 import css from "./Button.module.css";
 
-
 const Button = ({ children, styles, handleClick }) => {
-  // const buttonClass = classNames(css.button, styles);
   return (
     <button className={`${css.button} ${styles}`} onClick={() => handleClick()}>
       {children}
@@ -12,11 +9,10 @@ const Button = ({ children, styles, handleClick }) => {
   );
 };
 
-// Button.propTypes = {
-//   handleClick: PropTypes.func,
-//   children: PropTypes.node.isRequired,
-//   color: PropTypes.string,
-//   width: PropTypes.string,
-// };
+Button.propTypes = {
+  handleClick: PropTypes.func,
+  children: PropTypes.node.isRequired,
+  styles: PropTypes.string,
+};
 
 export default Button;
