@@ -19,8 +19,8 @@ const Slider = () => {
         className={css.image}
         src={backgraund}
         alt="Відцентровий витяжний вентилятор"
-        width={560}
-        height={377}
+        width={"560px"}
+        height={"377px"}
       />
       <div className={css.slide__info}>
         <div className={css.slide__info__text}>
